@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f9f9f9">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:gravity="center"
+        android:background="#ffffff"
+        android:text="마이페이지"
+        android:textColor="#000000"
+        android:textSize="18dp"
+        android:fontFamily="@font/nanumsquareround_b" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#eeeeee" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/edit_profile_circle"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="12dp" />
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/edit_change_circle"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:visibility="invisible"
+            android:layout_margin="12dp" />
+
+        <ImageView
+            android:id="@+id/edit_pic_iv"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignBottom="@+id/edit_profile_circle"
+            android:layout_alignRight="@+id/edit_profile_circle"
+            android:background="@drawable/camera_btn" />
+
+        <EditText
+            android:id="@+id/edit_nickname_et"
+            android:layout_width="159dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edit_profile_circle"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="30dp"
+            android:backgroundTint="#4a90e2"
+            android:gravity="center"
+            android:hint="닉네임"
+            android:inputType="text"
+            android:maxLength="8"
+            android:maxLines="1"
+            android:fontFamily="@font/nanumsquareround_r"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/edit_nickname_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="15dp"
+            android:layout_alignBottom="@+id/edit_nickname_et"
+            android:layout_alignRight="@+id/edit_nickname_et"
+            android:layout_marginBottom="15dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/review" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#f2f2f2" />
+</LinearLayout>

@@ -1,0 +1,9 @@
+platform :ios, '9.0'
+use_frameworks!
+
+target 'HandsomeGo' do
+    pod 'Alamofire'
+	pod 'Kingfisher'
+	pod 'SwiftyJSON'
+    pod 'SwiftGifOrigin'
+end

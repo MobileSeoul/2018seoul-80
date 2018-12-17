@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="match_parent"
+    android:layout_height="60dp">
+    
+    <ImageView
+        android:id="@+id/rank_color"
+        android:background="@color/colorOrange"
+        android:layout_width="11dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginBottom="3dp"/>
+
+    <TextView
+        android:id="@+id/rank_idx"
+        android:layout_width="27dp"
+        android:layout_height="wrap_content"
+        android:text="11"
+        android:textSize="15sp"
+        android:textColor="#434343"
+        android:layout_marginLeft="7dp"
+        android:layout_toRightOf="@id/rank_color"
+        android:layout_centerVertical="true"
+        android:fontFamily="@font/nanumsquareround_b"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/rank_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/rank_idx"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:textSize="15sp"
+        android:textColor="#434343"
+        android:fontFamily="@font/nanumsquareround_b"
+        android:text="덕수궁 돌담길길"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="18dp"
+        android:src="@drawable/more_right"/>
+
+    <View
+        android:layout_width="296dp"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="#eeeeee"/>
+</RelativeLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hyeong.handsomego">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <application
+        android:name=".applicationController.ApplicationController"
+        android:allowBackup="true"
+        android:icon="@drawable/handsomego_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!-- 카카오톡 메타데이터 -->
+        <meta-data
+            android:name="com.kakao.sdk.AppKey"
+            android:value="@string/kakao_app_key" />
+        <activity android:name=".MainActivity"/>
+        <activity android:name=".detail.DetailActivity" />
+        <activity android:name=".login.LoginActivity">
+        </activity>
+        <activity android:name=".review.ReviewActivity"/>
+        <activity android:name=".more_review.MoreReviewActivity"/>
+        <activity android:name=".after_stamp.AfterStampActivity" />
+        <activity android:name=".after_stamp.SimpleInfoActivity" />
+        <activity android:name=".qr_code.CameraActivity" />
+        <activity android:name=".qr_code.CustomScannerActivity" />
+        <activity
+            android:name=".qr_code.AnyOrientationCaptureActivity"
+            android:screenOrientation="fullSensor"
+            android:stateNotNeeded="true"
+            android:theme="@style/zxing_CaptureTheme"
+            android:windowSoftInputMode="stateAlwaysHidden"></activity>
+        <activity android:name=".splash.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

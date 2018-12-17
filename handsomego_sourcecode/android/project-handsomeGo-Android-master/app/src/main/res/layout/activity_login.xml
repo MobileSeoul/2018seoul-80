@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_bg"
+    android:gravity="center|top"
+    android:orientation="vertical"
+    tools:context="com.hyeong.handsomego.login.LoginActivity">
+
+    <ImageView
+        android:layout_width="101dp"
+        android:layout_height="101dp"
+        android:layout_marginTop="135dp"
+        android:layout_marginBottom="35dp"
+        android:src="@drawable/login_logo"/>
+
+    <LinearLayout
+        android:id="@+id/into_kakao"
+        android:layout_width="230dp"
+        android:layout_height="47dp"
+        android:background="@drawable/yellow_round_square"
+        android:layout_marginBottom="19dp"
+        android:elevation="3dp"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/kakao_logo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="카카오 계정으로 로그인"
+            android:textSize="14sp"
+            android:textColor="#432a14"
+            android:fontFamily="@font/nanumsquareround_b"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/into_guest"
+        android:layout_width="230dp"
+        android:layout_height="47dp"
+        android:elevation="3dp"
+        android:background="@drawable/white_round_square"
+        android:gravity="center">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="#74b9ff"
+            android:text="게스트로 들어가기"
+            android:fontFamily="@font/nanumsquareround_b"
+            />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:id="@+id/home_title_relative"
+        android:layout_width="match_parent"
+        android:background="#ffffff"
+        android:layout_height="56dp">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#eeeeee"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/main_top"
+        android:layout_width="match_parent"
+        android:layout_height="56dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="잘생겼GO"
+            android:textColor="#000000"
+            android:fontFamily="@font/nanumsquareround_b"
+            android:gravity="center"
+            android:textSize="18dp"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_below="@+id/main_top"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#eeeeee"
+        />
+
+    <RelativeLayout
+
+        android:id="@+id/home_tab"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/home_title_relative"
+        android:background="#ffffff"
+        android:layout_height="48dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/map_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:textSize="15sp"
+                    android:textColor="#434343"
+                    android:letterSpacing="0.01"
+                    android:fontFamily="@font/nanumsquareround_b"
+                    android:text="지도"
+                    android:textAlignment="center" />
+                <View
+                    android:id="@+id/home_map_view"
+                    android:layout_width="45dp"
+                    android:layout_height="6dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentBottom="true"
+                    android:visibility="invisible"
+                    android:background="@color/colorPrimary"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/rank_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:textSize="15sp"
+                    android:textColor="#434343"
+                    android:letterSpacing="0.01"
+                    android:fontFamily="@font/nanumsquareround_b"
+                    android:text="순위"
+                    android:textAlignment="center" />
+                <View
+                    android:id="@+id/home_rank_view"
+                    android:layout_width="45dp"
+                    android:layout_height="6dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentBottom="true"
+                    android:visibility="invisible"
+                    android:background="@color/colorPrimary"/>
+            </RelativeLayout>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#eeeeee"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_below="@+id/home_tab"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#eeeeee"
+        />
+
+
+    <FrameLayout
+        android:id="@+id/home_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/home_tab"
+        android:background="#fbfbfb"></FrameLayout>
+
+</RelativeLayout>

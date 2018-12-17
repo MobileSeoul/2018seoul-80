@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<font-family xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <font
+        android:font="@font/nanum_square_round_r"
+        android:fontStyle="normal"
+        app:font="@font/nanum_square_round_r"
+        app:fontStyle="normal"/>
+</font-family>

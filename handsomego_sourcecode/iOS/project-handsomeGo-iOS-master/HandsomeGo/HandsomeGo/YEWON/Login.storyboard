@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="EhO-Cj-E1H">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--LoginVC-->
+        <scene sceneID="OFn-0E-0aM">
+            <objects>
+                <viewController restorationIdentifier="LoginVC" storyboardIdentifier="LoginVC" id="b6X-RJ-qx1" customClass="LoginVC" customModule="HandsomeGo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="X3r-ch-5nf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loginBg" translatesAutoresizingMaskIntoConstraints="NO" id="5AD-2I-UHK">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2eC-a1-o5P">
+                                <rect key="frame" x="87.5" y="350.5" width="200" height="40"/>
+                                <state key="normal" image="kakaoLoginBtn"/>
+                                <connections>
+                                    <action selector="kakaoBtnAct:" destination="b6X-RJ-qx1" eventType="touchUpInside" id="9dN-pK-wcv"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1024_iOS" translatesAutoresizingMaskIntoConstraints="NO" id="OGl-XO-xim">
+                                <rect key="frame" x="127.5" y="125.5" width="120" height="120"/>
+                                <color key="backgroundColor" red="0.97815299030000002" green="0.87883716820000002" blue="0.2939929664" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="OGl-XO-xim" secondAttribute="height" multiplier="1:1" id="bvD-S9-0j0"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="50"/>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xsK-ZI-Yts">
+                                <rect key="frame" x="87.5" y="397" width="200" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="xsK-ZI-Yts" secondAttribute="height" multiplier="200:40" id="ZLx-xW-t0v"/>
+                                </constraints>
+                                <state key="normal" image="guestLoginBtn"/>
+                                <connections>
+                                    <action selector="guestBtnAct:" destination="b6X-RJ-qx1" eventType="touchUpInside" id="lAV-jy-s33"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="xsK-ZI-Yts" firstAttribute="centerY" secondItem="X3r-ch-5nf" secondAttribute="centerY" multiplier="1:0.8" id="CyA-A0-Zfb"/>
+                            <constraint firstItem="OGl-XO-xim" firstAttribute="centerX" secondItem="X3r-ch-5nf" secondAttribute="centerX" id="Efj-Ce-JYV"/>
+                            <constraint firstItem="OGl-XO-xim" firstAttribute="centerY" secondItem="X3r-ch-5nf" secondAttribute="centerY" multiplier="1:1.8" id="K2C-oD-VM6"/>
+                            <constraint firstItem="xsK-ZI-Yts" firstAttribute="centerX" secondItem="X3r-ch-5nf" secondAttribute="centerX" id="N8x-8b-Qgg"/>
+                            <constraint firstItem="2eC-a1-o5P" firstAttribute="width" secondItem="xsK-ZI-Yts" secondAttribute="width" id="YtC-h9-NIH"/>
+                            <constraint firstItem="2eC-a1-o5P" firstAttribute="height" secondItem="xsK-ZI-Yts" secondAttribute="height" id="ZeA-VE-XW1"/>
+                            <constraint firstItem="2eC-a1-o5P" firstAttribute="centerY" secondItem="X3r-ch-5nf" secondAttribute="centerY" multiplier="1:0.9" id="aIC-Nb-psH"/>
+                            <constraint firstItem="5AD-2I-UHK" firstAttribute="leading" secondItem="OkF-z5-ruE" secondAttribute="leading" id="bgE-Lt-Sff"/>
+                            <constraint firstItem="5AD-2I-UHK" firstAttribute="top" secondItem="X3r-ch-5nf" secondAttribute="top" id="dVF-5m-oCO"/>
+                            <constraint firstItem="OGl-XO-xim" firstAttribute="width" secondItem="5AD-2I-UHK" secondAttribute="width" multiplier="120:375" id="fTW-tr-KPl"/>
+                            <constraint firstItem="xsK-ZI-Yts" firstAttribute="width" secondItem="5AD-2I-UHK" secondAttribute="width" multiplier="200:375" id="fum-nu-WH4"/>
+                            <constraint firstAttribute="bottom" secondItem="5AD-2I-UHK" secondAttribute="bottom" id="hNr-jN-P1r"/>
+                            <constraint firstItem="2eC-a1-o5P" firstAttribute="centerX" secondItem="X3r-ch-5nf" secondAttribute="centerX" id="rbb-a8-HTR"/>
+                            <constraint firstItem="5AD-2I-UHK" firstAttribute="trailing" secondItem="OkF-z5-ruE" secondAttribute="trailing" id="vyN-jM-afb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="OkF-z5-ruE"/>
+                    </view>
+                    <connections>
+                        <outlet property="logoImg" destination="OGl-XO-xim" id="USo-Sw-Z84"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fdp-KT-87Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="349.60000000000002" y="33.733133433283363"/>
+        </scene>
+        <!--Launch View Controller-->
+        <scene sceneID="mZh-N0-Vve">
+            <objects>
+                <viewController restorationIdentifier="LaunchViewController" storyboardIdentifier="LaunchViewController" id="EhO-Cj-E1H" customClass="LaunchViewController" customModule="HandsomeGo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MKD-Eg-6qg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9W4-3f-RaT">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="9W4-3f-RaT" firstAttribute="leading" secondItem="VJB-ZG-sDf" secondAttribute="leading" id="72X-JS-OjC"/>
+                            <constraint firstAttribute="bottom" secondItem="9W4-3f-RaT" secondAttribute="bottom" id="AQl-D8-OaJ"/>
+                            <constraint firstItem="9W4-3f-RaT" firstAttribute="trailing" secondItem="VJB-ZG-sDf" secondAttribute="trailing" id="CVL-pV-Q0e"/>
+                            <constraint firstItem="9W4-3f-RaT" firstAttribute="top" secondItem="MKD-Eg-6qg" secondAttribute="top" id="efC-Xs-g3R"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="VJB-ZG-sDf"/>
+                    </view>
+                    <connections>
+                        <outlet property="launchImg" destination="9W4-3f-RaT" id="Dsa-yj-4HJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iXv-Ux-mPr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-302" y="34"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="1024_iOS" width="1024" height="1024"/>
+        <image name="guestLoginBtn" width="200" height="40"/>
+        <image name="kakaoLoginBtn" width="200" height="40"/>
+        <image name="loginBg" width="375" height="667"/>
+    </resources>
+</document>

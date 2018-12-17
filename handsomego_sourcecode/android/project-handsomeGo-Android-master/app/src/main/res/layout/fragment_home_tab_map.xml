@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".HomeTabMapFragment"
+    android:id="@+id/mapContainer">
+
+
+
+    <!-- android:visibility="gone" -->
+    <RelativeLayout
+        android:id="@+id/space_info_layout"
+        android:layout_width="333dp"
+        android:layout_height="102dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:layout_centerHorizontal="true"
+        android:elevation="3dp"
+        android:background="#FFFFFF"
+        >
+
+        <ImageView
+            android:id="@+id/map_img"
+            android:layout_width="66dp"
+            android:layout_height="66dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="18dp"
+            android:scaleType="centerCrop"
+            android:background="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/map_space_name"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@+id/map_img"
+            android:fontFamily="@font/nanumsquareround_b"
+            tools:text="덕수궁 돌담길"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/map_space_addr"
+            android:layout_width="wrap_content"
+            android:layout_height="17dp"
+            android:layout_below="@+id/map_space_name"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/map_img"
+            android:fontFamily="@font/nanumsquareround_r"
+            tools:text="서울 중구 정동"
+            android:textSize="11dp" />
+
+        <TextView
+            android:id="@+id/star_text"
+            android:layout_width="wrap_content"
+            android:layout_height="27dp"
+            android:layout_below="@+id/map_space_addr"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@+id/map_img"
+            android:fontFamily="@font/nanumsquareround_b"
+            tools:text="4.1"
+            android:textSize="18dp" />
+
+        <RatingBar
+            android:id="@+id/star_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="45dp"
+            android:scaleX="0.5"
+            android:scaleY="0.5"
+            android:numStars="5"
+            android:isIndicator="true"
+            />
+
+    </RelativeLayout>
+</RelativeLayout>
