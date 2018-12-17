@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>HandsomeGo.ipa</key>
+	<array>
+		<dict>
+			<key>architectures</key>
+			<array>
+				<string>arm64</string>
+			</array>
+			<key>certificate</key>
+			<dict>
+				<key>SHA1</key>
+				<string>8967C2D71167501CEEF5EC06EC2BD6CE64D3FF0D</string>
+				<key>dateExpires</key>
+				<string>2019. 8. 26.</string>
+				<key>type</key>
+				<string>iOS Distribution</string>
+			</dict>
+			<key>embeddedBinaries</key>
+			<array>
+				<dict>
+					<key>architectures</key>
+					<array>
+						<string>arm64</string>
+					</array>
+					<key>certificate</key>
+					<dict>
+						<key>SHA1</key>
+						<string>8967C2D71167501CEEF5EC06EC2BD6CE64D3FF0D</string>
+						<key>dateExpires</key>
+						<string>2019. 8. 26.</string>
+						<key>type</key>
+						<string>iOS Distribution</string>
+					</dict>
+					<key>name</key>
+					<string>Alamofire.framework</string>
+					<key>team</key>
+					<dict>
+						<key>id</key>
+						<string>N6JH7RBUA4</string>
+						<key>name</key>
+						<string>Se-eun Park</string>
+					</dict>
+				</dict>
+				<dict>
+					<key>architectures</key>
+					<array>
+						<string>arm64</string>
+					</array>
+					<key>certificate</key>
+					<dict>
+						<key>SHA1</key>
+						<string>8967C2D71167501CEEF5EC06EC2BD6CE64D3FF0D</string>
+						<key>dateExpires</key>
+						<string>2019. 8. 26.</string>
+						<key>type</key>
+						<string>iOS Distribution</string>
+					</dict>
+					<key>name</key>
+					<string>Kingfisher.framework</string>
+					<key>team</key>
+					<dict>
+						<key>id</key>
+						<string>N6JH7RBUA4</string>
+						<key>name</key>
+						<string>Se-eun Park</string>
+					</dict>
+				</dict>
+				<dict>
+					<key>architectures</key>
+					<array>
+						<string>arm64</string>
+					</array>
+					<key>certificate</key>
+					<dict>
+						<key>SHA1</key>
+						<string>8967C2D71167501CEEF5EC06EC2BD6CE64D3FF0D</string>
+						<key>dateExpires</key>
+						<string>2019. 8. 26.</string>
+						<key>type</key>
+						<string>iOS Distribution</string>
+					</dict>
+					<key>name</key>
+					<string>SwiftGifOrigin.framework</string>
+					<key>team</key>
+					<dict>
+						<key>id</key>
+						<string>N6JH7RBUA4</string>
+						<key>name</key>
+						<string>Se-eun Park</string>
+					</dict>
+				</dict>
+				<dict>
+					<key>architectures</key>
+					<array>
+						<string>arm64</string>
+					</array>
+					<key>certificate</key>
+					<dict>
+						<key>SHA1</key>
+						<string>8967C2D71167501CEEF5EC06EC2BD6CE64D3FF0D</string>
+						<key>dateExpires</key>
+						<string>2019. 8. 26.</string>
+						<key>type</key>
+						<string>iOS Distribution</string>
+					</dict>
+					<key>name</key>
+					<string>SwiftyJSON.framework</string>
+					<key>team</key>
+					<dict>
+						<key>id</key>
+						<string>N6JH7RBUA4</string>
+						<key>name</key>
+						<string>Se-eun Park</string>
+					</dict>
+				</dict>
+			</array>
+			<key>entitlements</key>
+			<dict>
+				<key>application-identifier</key>
+				<string>N6JH7RBUA4.pkse1213.HandsomeGo</string>
+				<key>com.apple.developer.team-identifier</key>
+				<string>N6JH7RBUA4</string>
+				<key>get-task-allow</key>
+				<false/>
+				<key>keychain-access-groups</key>
+				<array>
+					<string>N6JH7RBUA4.pkse1213.HandsomeGo</string>
+				</array>
+			</dict>
+			<key>name</key>
+			<string>HandsomeGo.app</string>
+			<key>profile</key>
+			<dict>
+				<key>UUID</key>
+				<string>d5806fe6-2d9e-4da6-aa9c-f7be4cb5675a</string>
+				<key>name</key>
+				<string>iOS Team Ad Hoc Provisioning Profile: *</string>
+			</dict>
+			<key>team</key>
+			<dict>
+				<key>id</key>
+				<string>N6JH7RBUA4</string>
+				<key>name</key>
+				<string>Se-eun Park</string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>
